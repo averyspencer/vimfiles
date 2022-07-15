@@ -3,6 +3,9 @@ set expandtab
 set tabstop=4
 set shiftwidth=0        " Zero means that it will be the same as tabstop
 
+" Turn on autoindent
+set autoindent
+
 " C-t is uncomfortable; use C-o for insert mode indent instead
 inoremap <C-o> <C-t>
 
