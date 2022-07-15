@@ -1,9 +1,11 @@
-" Use spaces because some langs require it
+" Use spaces instead of tabs
 set expandtab
-
-" Tab should give four spaces
 set tabstop=4
+set shiftwidth=0        " Zero means that it will be the same as tabstop
 
-" Map CTRL-I to a convenient way to unindent
-imap <C-i> <esc>3h4xa
+" C-t is uncomfortable; use C-o for insert mode indent instead
+inoremap <C-o> <C-t>
+
+" C-d is uncomfortable; use C-i for insert mode unindent instead
+inoremap <C-i> <C-d>
 
