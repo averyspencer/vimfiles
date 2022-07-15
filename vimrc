@@ -12,6 +12,9 @@ inoremap <C-o> <C-t>
 " C-d is uncomfortable; use C-i for insert mode unindent instead
 inoremap <C-i> <C-d>
 
-" Convenient way to go back a line in insert mode
+" Convenient way to delete back a line in insert mode
 inoremap <C-BS> <esc>dda
+
+" Convenient way to delete back a line, to the end, in insert mode
+inoremap <M-BS> <esc>dd$a
 
